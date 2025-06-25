@@ -19,7 +19,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:5173") // Vue dev server
+@CrossOrigin(origins = {
+	    "http://localhost:5173", 
+	    "https://frontend-vue-puce.vercel.app/"
+	})
+
 public class ChatController {
 
     @PostMapping("/chat")
