@@ -46,7 +46,7 @@ public class ChatController {
             {
               "model": "gpt-4o",
               "messages": [
-                { "role": "system", "content": "Bạn là một trợ lý AI chuyên dạy lập trình." },
+                { "role": "system", "content": "" },
                 { "role": "user", "content": "%s" }
               ],
               "temperature": 0.7
